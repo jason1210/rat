@@ -11,28 +11,30 @@
     <groupId>com.jason.rat</groupId>
     <artifactId>rat</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
     <name>rat</name>
     <description>Demo project for Spring Boot</description>
 
     <modules>
-        <module>rat-common</module>
-        <module>rat-client</module>
+        <module>rat-api</module>
         <module>rat-server</module>
         <module>rat-portal</module>
+        <module>rat-admin</module>
         <module>rat-demo</module>
     </modules>
 
     <properties>
         <mysql.version>8.0.16</mysql.version>
-        <lombok.version>8.0.16</lombok.version>
+        <lombok.version>1.18.6</lombok.version>
+        <springboot.mybatis.version>1.3.0</springboot.mybatis.version>
+        <mybatis.version>3.4.6</mybatis.version>
+        <mybatis.generator.version>1.3.3</mybatis.generator.version>
+        <druid.version>1.0.29</druid.version>
+        <dubbo.version>0.2.0</dubbo.version>
+        <netty-all.version>4.1.25.Final</netty-all.version>
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-        </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -51,6 +53,48 @@
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>${springboot.mybatis.version}</version>
+            </dependency>
+
+            <!-- MyBatis 生成器 -->
+            <dependency>
+                <groupId>org.mybatis.generator</groupId>
+                <artifactId>mybatis-generator-core</artifactId>
+                <version>${mybatis.generator.version}</version>
+            </dependency>
+            <!-- MyBatis-->
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis</artifactId>
+                <version>${mybatis.version}</version>
+            </dependency>
+            <!-- MyBatis-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+
+            <!--dubbo-->
+            <dependency>
+                <groupId>com.alibaba.boot</groupId>
+                <artifactId>dubbo-spring-boot-starter</artifactId>
+                <version>0.2.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.boot</groupId>
+                <artifactId>dubbo-spring-boot-actuator</artifactId>
+                <version>0.2.0</version>
+            </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-all</artifactId>
+                <version>4.1.25.Final</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

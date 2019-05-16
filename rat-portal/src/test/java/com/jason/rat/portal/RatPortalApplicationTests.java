@@ -1,4 +1,4 @@
-package com.jason.rat.ratserver;
+package com.jason.rat.portal;
 
 import org.junit.Ignore;
 import org.junit.Test;
@@ -9,10 +9,10 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @Ignore
-public class RatServerApplicationTests {
+public class RatPortalApplicationTests {
 
-    @Test
-    public void contextLoads() {
-    }
+	@Test
+	public void contextLoads() {
+	}
 
 }
