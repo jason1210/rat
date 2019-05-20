@@ -102,6 +102,13 @@
                 <artifactId>logback-classic</artifactId>
                 <version>${logback.version}</version>
             </dependency>
+
+            <!--rabbitmq-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-amqp</artifactId>
+                <version>${parent.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 

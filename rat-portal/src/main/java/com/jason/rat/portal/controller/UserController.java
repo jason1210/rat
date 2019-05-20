@@ -1,7 +1,7 @@
 package com.jason.rat.portal.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.jason.rat.client.model.User;
+import com.jason.rat.client.result.Result;
 import com.jason.rat.client.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,12 +23,13 @@ public class UserController {
     private UserService userService;
 
     @GetMapping("/userInfo/{id}")
-    public User getUserInfo(@PathVariable Long id) {
+    public Result getUserInfo(@PathVariable Long id) {
+        Result result = new Result();
         try {
-            return userService.findById(id);
+            return result.success(userService.findById(id));
         } catch (Exception e) {
             logger.error("userService.findById error,id=" + id, e);
+            return result.sysError("查询失败！请稍后重试！");
         }
-        return null;
     }
 }
