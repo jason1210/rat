@@ -7,7 +7,7 @@ Rat, cow, tiger, rabbit, dragon, snake, horse, sheep, monkey, chicken, dog, pig
 
 ### 组织结构
 
-SpingBoot+Mybatis+Mysql+Dubbo+RocketMQ
+SpingBoot+Mybatis+Mysql+Dubbo+RabbitMQ
 
 ``` 
 rat
