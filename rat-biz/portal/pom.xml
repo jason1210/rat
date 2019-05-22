@@ -4,14 +4,13 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.jason.rat</groupId>
-        <artifactId>rat</artifactId>
+        <artifactId>rat-biz</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.jason.rat</groupId>
-    <artifactId>rat-admin</artifactId>
+    <artifactId>rat-biz-portal</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
-    <name>rat-admin</name>
+    <name>rat-biz-portal</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -19,28 +18,13 @@
     </properties>
 
     <dependencies>
-
-        <!-- 一方库 -->
-        <dependency>
-            <groupId>com.jason.rat</groupId>
-            <artifactId>rat-api</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-
-        <!-- 三方库 -->
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
         </dependency>
     </dependencies>
 

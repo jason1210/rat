@@ -8,41 +8,21 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.jason.rat</groupId>
-    <artifactId>rat-admin</artifactId>
+    <artifactId>rat-biz</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
-    <name>rat-admin</name>
+    <name>rat-biz</name>
+    <packaging>pom</packaging>
     <description>Demo project for Spring Boot</description>
+
+    <modules>
+        <module>common</module>
+        <module>portal</module>
+        <module>admin</module>
+    </modules>
 
     <properties>
         <java.version>1.8</java.version>
     </properties>
-
-    <dependencies>
-
-        <!-- 一方库 -->
-        <dependency>
-            <groupId>com.jason.rat</groupId>
-            <artifactId>rat-api</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-
-        <!-- 三方库 -->
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-thymeleaf</artifactId>
-        </dependency>
-    </dependencies>
 
     <build>
         <plugins>

@@ -1,25 +1,22 @@
 package com.jason.rat.portal;
 
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.Bean;
-
-import java.util.Arrays;
+import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
+@ComponentScan(basePackages = {"com.jason.rat.*"})
 public class RatPortalApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(RatPortalApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(RatPortalApplication.class, args);
+    }
 
-	/**
-	 * 打印springboot启动时装在了哪些bean
-	 * @param ctx
-	 * @return
-	 */
+    /**
+     * 打印springboot启动时装在了哪些bean
+     * @param ctx
+     * @return
+     */
 /*	@Bean
 	public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
 		return args -> {

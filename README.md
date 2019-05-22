@@ -13,6 +13,10 @@ SpingBoot+Mybatis+Mysql+Dubbo+RabbitMQ
 rat
 ├── rat-api -- 服务api
 ├── rat-server -- 服务
+├── rat-biz -- 业务模块
+    ├── common -- 公共业务模块
+    ├── portal -- 门户业务模块  
+    ├── admin -- 后台管理业务模块 
 ├── rat-admin -- 后台管理系统
 ├── rat-portal -- 门户系统
 ├── rat-web -- 门户页面 ，基于vue

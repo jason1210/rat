@@ -33,6 +33,7 @@
         <dubbo.version>0.2.0</dubbo.version>
         <netty-all.version>4.1.25.Final</netty-all.version>
         <logback.version>1.2.2</logback.version>
+        <springboot.version>2.1.5.RELEASE</springboot.version>
     </properties>
 
     <dependencies>
@@ -104,10 +105,17 @@
             </dependency>
 
             <!--rabbitmq-->
+
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-amqp</artifactId>
-                <version>${parent.version}</version>
+                <version>${springboot.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-thymeleaf</artifactId>
+                <version>${springboot.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
