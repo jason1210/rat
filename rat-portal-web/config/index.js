@@ -12,13 +12,14 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {
-        target: 'https://localhost:8443',
-        changeOrigin: true,
+        target: 'http://localhost:8080',//后端接口地址
+        changeOrigin: true,//是否允许跨越
         pathRewrite: {
-          '^/api': ''
+          '^/api': '/',//重写,
         }
       }
     },
+
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST

@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Login from '@/components/manage/Login.vue'
-import Index from '@/components/home/Index.vue'
+import RatLogin from '@/components/manage/RatLogin.vue'
+import RatIndex from '@/components/home/RatIndex.vue'
 
 Vue.use(Router)
 
@@ -12,9 +12,9 @@ export default new Router({
       redirect: '/login'
     },
     {
-      path: '/index',
-      name: 'Index',
-      component: Index
+        path: '/index',
+      name: 'RatIndex',
+      component: RatIndex
     },
     {
       path: '/manage',
@@ -22,8 +22,8 @@ export default new Router({
     },
     {
       path: '/login',
-      name: 'Login',
-      component: Login
+      name: 'RatLogin',
+      component: RatLogin
     }
   ]
 })

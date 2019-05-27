@@ -9,7 +9,7 @@
     </parent>
     <groupId>com.jason.rat</groupId>
     <artifactId>rat-admin</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>${parent.version}</version>
     <packaging>jar</packaging>
     <name>rat-admin</name>
     <description>Demo project for Spring Boot</description>
@@ -20,28 +20,17 @@
 
     <dependencies>
 
-        <!-- 一方库 -->
         <dependency>
             <groupId>com.jason.rat</groupId>
-            <artifactId>rat-api</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-
-        <!-- 三方库 -->
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>rat-biz-admin</artifactId>
+            <version>${parent.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
+            <groupId>com.jason.rat</groupId>
+            <artifactId>rat-biz-common</artifactId>
+            <version>${parent.version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-thymeleaf</artifactId>
-        </dependency>
     </dependencies>
 
     <build>
