@@ -35,7 +35,7 @@
         <netty-all.version>4.1.25.Final</netty-all.version>
         <logback.version>1.2.2</logback.version>
         <springboot.version>2.1.5.RELEASE</springboot.version>
-        <shiro.version>1.3.2</shiro.version>
+        <shiro.version>1.10.0</shiro.version>
         <fastjson.version>1.2.56</fastjson.version>
     </properties>
 
